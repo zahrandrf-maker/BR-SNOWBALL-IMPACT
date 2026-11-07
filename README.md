@@ -1,15 +1,20 @@
-# BR Snowball Impact v0.1.1 Beta
-Interactive transparent snowball impact source for Resolume on Windows.
+# BR Snowball Camera Smash v0.2.0 Beta
 
-Features: THROW trigger, selectable launch direction, custom impact position, travel speed, ball size, rotation, motion blur, snow burst, frost splash, flash, shake, temporary or persistent snow mark, auto reset, and MIDI/OSC-mappable controls.
+Transparent FFGL source for Resolume Arena on Windows. A snowball approaches from the distance, rushes into the camera, covers the screen, then explodes into large snow chunks.
 
-Upload all files including `.github` to a GitHub repository, run **Build BR Snowball Impact**, download the artifact, extract its ZIP and nested `.tar.gz`, then copy `BR Snowball Impact.dll` to `Documents\Resolume Arena\Extra Effects`. Restart Resolume and find it under Sources.
+## Main controls
 
-Original effect by Belajar Resolume.
+- **SMASH** starts the complete animation.
+- Approach Duration, Perspective Zoom, Approach Wobble, start and impact position control the incoming ball.
+- Screen Cover Duration holds the snow on the lens briefly.
+- Snow Chunk Amount, Snow Chunk Size, Explosion Speed, and Clear Duration control the breakup.
+- End Style: Clean Clear, Chunks Leave, Frost Fade, or Frost Stay.
+- Pause, Resume, End, Reset, Auto Reset, colour, opacity, and seed are MIDI/OSC mappable.
 
-## v0.1.1
-- Quintic cinematic easing instead of stepped linear movement
-- Curved Bezier trajectory with adjustable Trajectory Curve
-- Continuous motion blur instead of repeated ghost balls
-- Adjustable Motion Smoothness and shader anti-aliasing
-- Smoother burst acceleration, particle edges, and impact transition
+The source uses premultiplied transparent output; no green-screen key is required.
+
+## GitHub build
+
+Upload every file and folder, including `.github`, to the root of a GitHub repository. Open **Actions**, run **Build BR Snowball Impact**, and download the artifact. Extract the downloaded ZIP and then the nested `.tar.gz`. Copy `BR Snowball Impact.dll` to `Documents\Resolume Arena\Extra Effects`, restart Resolume, then find **BR Snowball Camera Smash** under Sources.
+
+Effect by Belajar Resolume.
