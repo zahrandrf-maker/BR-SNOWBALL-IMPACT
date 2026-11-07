@@ -1,0 +1,3 @@
+LIBRARY "BR Snowball Impact"
+EXPORTS
+    plugMain
