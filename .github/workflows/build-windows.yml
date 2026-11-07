@@ -30,10 +30,10 @@ jobs:
           New-Item -ItemType Directory -Force -Path package,out|Out-Null
           Copy-Item "build/plugin/BR Snowball Impact.dll" "package/BR Snowball Impact.dll"
           Copy-Item README.md package/README.txt
-          tar -czf "out/BR-Snowball-Impact-Windows-v0.1.0-beta.tar.gz" -C package .
+          tar -czf "out/BR-Snowball-Impact-Windows-v0.1.1-beta.tar.gz" -C package .
       - name: Upload plugin
         uses: actions/upload-artifact@v4
         with:
-          name: BR-Snowball-Impact-Windows-v0.1.0-beta
-          path: out/BR-Snowball-Impact-Windows-v0.1.0-beta.tar.gz
+          name: BR-Snowball-Impact-Windows-v0.1.1-beta
+          path: out/BR-Snowball-Impact-Windows-v0.1.1-beta.tar.gz
           if-no-files-found: error
